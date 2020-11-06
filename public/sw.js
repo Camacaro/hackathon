@@ -149,25 +149,25 @@ self.addEventListener('push', e => {
         // icon: 'img/icons/icon-72x72.png', // path relativo o http://
         icon: `img/avatars/${ data.usuario }.jpg`,
         badge: 'img/favicon.ico', // icono de los Androi
-        image: 'https://datainfox.com/wp-content/uploads/2017/10/avengers-tower.jpg', // Imagen completa en la notificacion
+        image: 'img/icons/4e0ed510-9f4f-4a84-bbad-52cc26cc449f.jpg', // Imagen completa en la notificacion
         vibrate: [125,75,125,275,200,275,125,75,125,275,200,600,200,600], // como vibrara el telefono [vibrar, no-vibrar, vibrar, no-vibrar]
         openUrl: '/', // Que abrir al darle click
         data: { // Informacion dentro de la notificacion
             url: '/',
             id: data.usuario
         },
-        actions: [ // acciones personalizadas al tocar la notificacion, son opciones que salen en la notificacion para ser seleccionada 
-            {// No es remondado hacer esto, ya que es mejor las de por defecto del dispositivo
-                action: 'thor-action',
-                title: 'Thor',
-                icon: 'img/avatar/thor.jpg'
-            }, 
-            { // los usuarios no sabem que pueden interactuar con ellas 
-                action: 'ironman-action',
-                title: 'Ironman',
-                icon: 'img/avatar/ironman.jpg'
-            }  
-        ]
+        // actions: [ // acciones personalizadas al tocar la notificacion, son opciones que salen en la notificacion para ser seleccionada 
+        //     {// No es remondado hacer esto, ya que es mejor las de por defecto del dispositivo
+        //         action: 'thor-action',
+        //         title: 'Thor',
+        //         icon: 'img/avatar/thor.jpg'
+        //     }, 
+        //     { // los usuarios no sabem que pueden interactuar con ellas 
+        //         action: 'ironman-action',
+        //         title: 'Ironman',
+        //         icon: 'img/avatar/ironman.jpg'
+        //     }  
+        // ]
     }
 
     /**
