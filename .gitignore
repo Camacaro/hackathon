@@ -10,5 +10,3 @@ node_modules/
 *.iml
 *.pem
 *.zip
-
-server/subs-db.json
